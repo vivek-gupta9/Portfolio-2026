@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+ background-color: #60A5FA;
+  font-family: 'Space Mono', monospace;
+  overflow-x: hidden;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="%23F9A8D4" stroke="black" stroke-width="1.5" stroke-linejoin="round" d="M5.5 3.5L18.5 10.5L11.5 12.5L15.5 20.5L12.5 22L8.5 14L4 18.5V3.5Z"/></svg>'), auto;
+}
+
+/* Hover effect on links, buttons, and custom cursor-pointer class */
+a, button, [role="button"], .cursor-pointer {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="%23FDE047" stroke="black" stroke-width="1.5" stroke-linejoin="round" d="M5.5 3.5L18.5 10.5L11.5 12.5L15.5 20.5L12.5 22L8.5 14L4 18.5V3.5Z"/></svg>'), pointer !important;
+}
+
+h1, h2, h3, h4, .heading-font {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+}
+
+.brutal-border {
+  border: 3px solid black;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #60A5FA;
+  border-left: 3px solid black;
+}
+::-webkit-scrollbar-thumb {
+  background: #FDE047;
+  border: 3px solid black;
+  border-radius: 6px;
+}
